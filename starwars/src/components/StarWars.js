@@ -22,10 +22,15 @@ function StarWars() {
     return (
         <div>
             <div>
-               <Character name={person.name} height={person.height} mass={person.mass} hair_color={person.hair_color} skin_color={person.skin_color} homeworld={person.homeworld} />;
+                <Character name={person.name} height={person.height} mass={person.mass} hair_color={person.hair_color} skin_color={person.skin_color} homeworld={person.homeworld} />;
             </div>
-            <Button onClick={() => setPerson("2")}>C-3PO</Button>&nbsp;
-            <Button onClick={() => setPerson("3")}>R2-D2</Button>
+            <div>
+                <Button color="primary" onClick={() => setPerson("1")}>Luke Skywalker</Button>&nbsp;
+                <Button color="primary" onClick={() => setPerson("2")}>C-3PO</Button>&nbsp;
+                <Button color="primary" onClick={() => setPerson("3")}>R2-D2</Button>&nbsp;
+                <Button color="primary" onClick={() => setPerson("4")}>Darth Vader</Button>&nbsp;
+                <Button color="primary" onClick={() => setPerson("5")}>Leia Organa</Button>
+            </div>
         </div>
     )
 }
